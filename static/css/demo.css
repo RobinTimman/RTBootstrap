@@ -1,0 +1,34 @@
+input[type=text]:focus, textarea:focus {
+  box-shadow: none;
+  border: none;
+}
+.codeprev {
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+	width: 100%;
+	border: none;
+	resize: none;
+	outline: none;
+	font-size: 12px;
+}
+.codeprev span {
+	margin: 0;
+	padding: 0;
+}
+textarea span {
+	color: #f00;
+}
+.rtcc-sp { color: #00f; }
+.rtcc-el,
+.rtcc-sp
+{
+	color: navy;
+}
+.rtcc-cn {
+	color: teal;
+}
+.rtcc-cc {
+	color: #dd1144;
+}
+.rtcc-txt {
+	color: #000;
+}
