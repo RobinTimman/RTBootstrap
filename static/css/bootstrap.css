@@ -297,6 +297,7 @@ span[class*="RTB-"] {
 .RTB-i-spa { background-color: #99989b; }
 .RTB-i-gol { background-color: #d4c5b3; }
 .RTB-i-sil { background-color: #d7d9d8; }
+.RTB-i-gra { background-color: rgba(68, 79, 89, 1); }
 
 /* end colors */
 .mh-100 { min-height: 100px; }
