@@ -24,7 +24,7 @@ RTB:
 	RTB-i-*		- iPhone color Styles
 	RTB-C-*		- Columns
 RTH:
-	RTH-A-*		- All element styles
-	RTH-H-*		- HTML element styles
-	RTH-C-*		- CSS elements
-	RTH-J-*		- Javascript elements
+	RTH-*		- All element styles
+	RTH-*		- HTML element styles
+	RTH-*		- CSS elements
+	RTH-*		- Javascript elements
