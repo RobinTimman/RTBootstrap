@@ -188,7 +188,7 @@ function RTHighlight(options){
 			console.log('</'+el.className+'>');
 		}
 	}
-
+ 
 	function fiel(element, index){
 			var els 		= element;
 			for(var i = 0; i < els.length; i++){
@@ -215,7 +215,7 @@ function RTHighlight(options){
 	        return "&" + {"&":"amp", "<":"lt", ">":"gt", '"':"quot", "'":"#39"}[$0] + ";";
 	    });
 	}
-}
+}/*
 window.RTH = new RTHighlight({
 	element: 'replaceRTH'
-});
+});*/
