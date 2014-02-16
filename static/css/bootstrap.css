@@ -31,7 +31,7 @@ h1, h2, h3, h3, h5, p, ul, li {
 	margin:									0;
 	padding:								0;
 }
-h3 {
+.sub-title {
 	margin-top: 22px;
 	margin-bottom: 11px;
 	font-size: 28px;
@@ -60,12 +60,6 @@ body {
 }
 body, h1, h2, h3, h4, h5, h6, input {
 	font-weight: 300;
-}
-h1{
-
-}
-h2 {
-
 }
 pre {
 	width: 100%;
@@ -116,10 +110,6 @@ header .content {
 	padding: 30px 15px 40px;
 	text-align: center;
 }
-.content h1 {
-	position: relative;
-	font-size: 41px;
-}
 p {
 	font-weight: 300;
 	line-height: 1.5;
@@ -140,6 +130,7 @@ p {
 	margin-bottom: 0px;
 	padding-top: 80px;
 	margin-top: -45px;
+	/*color: #fff;*/
 }
 
 
@@ -148,7 +139,6 @@ p {
 	padding: 15px;
 	margin: 0 -15px 15px;
 	background-color: rgba(255,255,255,0.5);
-	box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
 	border-color: #e5e5e5 #eee #eee;
 	border-style: solid;
 	border-width: 1px 0;
@@ -175,7 +165,7 @@ p {
 .rt-item-footer [class*="RTB-"] {
 	/*color: #333;*/
 }
-.rt-item > h1 {
+.rt-item > .ex-title {
 	position: relative;
 	margin-bottom: 13px;
 	font-size: 12px;
@@ -221,16 +211,25 @@ p {
 	height: 50px;
 	float: left;
 }
+/* RTB columns */
+[class*="RTB-c-"] {
+	position: relative;
+}
+.RTB-c-50 {
 
-
+}
 /* colors: */
 [class*="RTB-"] {
 	color: #fff;
-}
-span[class*="RTB-"], .rt-item [class*="RTB-"] {
+}/*
+span[class*="RTB-f-"],
+span[class*="RTB-i-"],
+.rt-item [class*="RTB-f-"],
+.rt-item [class*="RTB-i-"] {
 	padding: 3px 5px;
-}
-span[class*="RTB-"] {
+}*/
+span[class*="RTB-f-"],
+span[class*="RTB-i-"] {
 	margin: 0 3px;
 }
 /*	Flat colors:
@@ -300,14 +299,54 @@ span[class*="RTB-"] {
 .RTB-i-gra { background-color: rgba(68, 79, 89, 1); }
 
 /* end colors */
+
+/* RTB heading */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+}
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	margin-top: 22px;
+	margin-bottom: 11px;
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin-top: 11px;
+	margin-bottom: 11px;
+	line-height: 1.1;
+}
+h1, .h1 { font-size: 41px; }
+h2, .h2 { font-size: 34px; }
+h3, .h3 { font-size: 28px; }
+h4, .h4 { font-size: 20px; }
+h5, .h5 { font-size: 16px; }
+h6, .h6 { font-size: 14px; }
+h1 span[class*="RTB-"], .h1 span[class*="RTB-"],
+h2 span[class*="RTB-"], .h2 span[class*="RTB-"],
+h3 span[class*="RTB-"], .h3 span[class*="RTB-"],
+h4 span[class*="RTB-"], .h4 span[class*="RTB-"],
+h5 span[class*="RTB-"], .h5 span[class*="RTB-"],
+h5 span[class*="RTB-"], .h6 span[class*="RTB-"] {
+	padding: 3px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+h1 span, .h1 span {
+	font-size: 34px;
+}
+h2 span, .h1 span {
+	font-size: 30px;
+}
+/* End headings */
 .mh-100 { min-height: 100px; }
 .mh-125 { min-height: 125px; }
 .mh-150 { min-height: 150px; }
 
-.RTB-i-gre, .RTB-i-gre a,
-.RTB-i-whi, .RTB-i-whi a,
-.RTB-i-yel, .RTB-i-yel a,
-.RTB-i-sil, .RTB-i-sil a {
+.RTB-i-gre, .RTB-i-gre > a, .RTB-i-gre * h1,
+.RTB-i-whi, .RTB-i-whi > a, .RTB-i-whi * h1,
+.RTB-i-yel, .RTB-i-yel > a, .RTB-i-yel * h1,
+.RTB-i-sil, .RTB-i-sil > a, .RTB-i-sil * h1 {
 	text-shadow: none;
 	color: #333;
 }
