@@ -167,6 +167,7 @@ p {
 }
 .rt-item > .ex-title {
 	position: relative;
+	margin-top: 0;
 	margin-bottom: 13px;
 	font-size: 12px;
 	font-weight: bold;
@@ -185,6 +186,8 @@ p {
 	min-height: 10px;
 	display: block;
 	overflow: auto;
+	margin-top: 0;
+	margin-bottom: 13px;
 }
 .btn-toolbar > h1 {
 	margin-top: 0px;
@@ -201,7 +204,6 @@ p {
 }
 .btn-group {
 	position: relative;
-	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: visible;
@@ -211,13 +213,51 @@ p {
 	height: 50px;
 	float: left;
 }
+.RTB-label {
+	display: inline;
+	margin: 0 3px;
+	padding: .2em .6em;
+	font-size: 75%;
+	font-weight: 300;
+	line-height: 1;
+	/*color: #fff;*/
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+}
+h1 .RTB-label,
+h2 .RTB-label,
+h3 .RTB-label {
+	margin: 0 6px;
+}
 /* RTB columns */
 [class*="RTB-c-"] {
+	width: 100%;
+	min-height: 1px;
 	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
 }
-.RTB-c-50 {
+.RTB-c-10 {	width: 10%; }
+.RTB-c-20 {	width: 20%; }
+.RTB-c-25 {	width: 25%; }
+.RTB-c-33 { width: 33.33333333333333%;}
+.RTB-c-50 {	width: 50%; }
+.RTB-c-66 { width: 66.66666666666667%;}
+.RTB-c-75 {	width: 75%; }
+.RTB-c-80 {	width: 80%; }
+.RTB-c-90 {	width: 90%; }
+.RTB-c-100 {width: 100%; }
+@media screen and (max-width: 650px){
+	.RTB-c-33,
+	.RTB-c-50,
+	.RTB-c-75 {
+		width: 100%;
+	}
+}
 
-}
 /* colors: */
 [class*="RTB-"] {
 	color: #fff;
@@ -228,10 +268,12 @@ span[class*="RTB-i-"],
 .rt-item [class*="RTB-i-"] {
 	padding: 3px 5px;
 }*/
-span[class*="RTB-f-"],
-span[class*="RTB-i-"] {
-	margin: 0 3px;
-}
+.RTB-a-blu { background-color: #6d96bd; }
+.RTB-a-dbl { background-color: #343446; }
+.RTB-a-lbl { background-color: #d6e7f6; }
+.RTB-a-gre { background-color: #34c78a; }
+.RTB-a-ora { background-color: #ea9437; }
+.RTB-a-red { background-color: #df4c47; }
 /*	Flat colors:
  *	turquoise: #1abc9c;
  *	green sea: #16a085;
@@ -296,8 +338,15 @@ span[class*="RTB-i-"] {
 .RTB-i-spa { background-color: #99989b; }
 .RTB-i-gol { background-color: #d4c5b3; }
 .RTB-i-sil { background-color: #d7d9d8; }
-.RTB-i-gra { background-color: rgba(68, 79, 89, 1); }
-
+.RTB-i-gra { background-color: #444F59; }
+/* fix colors */
+.RTB-i-gre, .RTB-i-gre > a, .RTB-i-gre h1, .RTB-i-gre h2, .RTB-i-gre h3, .RTB-i-gre h4, .RTB-i-gre h5, .RTB-i-gre h6, span.RTB-i-gre,
+.RTB-i-whi, .RTB-i-whi > a, .RTB-i-whi h1, .RTB-i-whi h2, .RTB-i-whi h3, .RTB-i-whi h4, .RTB-i-whi h5, .RTB-i-whi h6, span.RTB-i-whi,
+.RTB-i-yel, .RTB-i-yel > a, .RTB-i-yel h1, .RTB-i-yel h2, .RTB-i-yel h3, .RTB-i-yel h4, .RTB-i-yel h5, .RTB-i-yel h6, span.RTB-i-yel,
+.RTB-i-sil, .RTB-i-sil > a, .RTB-i-sil h1, .RTB-i-sil h2, .RTB-i-sil h3, .RTB-i-sil h4, .RTB-i-sil h5, .RTB-i-sil h6, span.RTB-i-sil {
+	text-shadow: none;
+	color: #333;
+}
 /* end colors */
 
 /* RTB heading */
@@ -306,7 +355,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-	margin-top: 22px;
+	margin-top: 15px;
 	margin-bottom: 11px;
 }
 h4, .h4,
@@ -322,16 +371,14 @@ h3, .h3 { font-size: 28px; }
 h4, .h4 { font-size: 20px; }
 h5, .h5 { font-size: 16px; }
 h6, .h6 { font-size: 14px; }
+
 h1 span[class*="RTB-"], .h1 span[class*="RTB-"],
 h2 span[class*="RTB-"], .h2 span[class*="RTB-"],
 h3 span[class*="RTB-"], .h3 span[class*="RTB-"],
 h4 span[class*="RTB-"], .h4 span[class*="RTB-"],
 h5 span[class*="RTB-"], .h5 span[class*="RTB-"],
-h5 span[class*="RTB-"], .h6 span[class*="RTB-"] {
-	padding: 3px;
-	margin-left: 5px;
-	margin-right: 5px;
-}
+h6 span[class*="RTB-"], .h6 span[class*="RTB-"] {}
+/*
 h1 span, .h1 span {
 	font-size: 34px;
 }
@@ -343,13 +390,6 @@ h2 span, .h1 span {
 .mh-125 { min-height: 125px; }
 .mh-150 { min-height: 150px; }
 
-.RTB-i-gre, .RTB-i-gre > a, .RTB-i-gre * h1,
-.RTB-i-whi, .RTB-i-whi > a, .RTB-i-whi * h1,
-.RTB-i-yel, .RTB-i-yel > a, .RTB-i-yel * h1,
-.RTB-i-sil, .RTB-i-sil > a, .RTB-i-sil * h1 {
-	text-shadow: none;
-	color: #333;
-}
 [class*="rtw"] {
 	width: 100%;
 	min-height: 1px;
@@ -378,4 +418,7 @@ code {
 	background-color: whitesmoke;
 	white-space: nowrap;
 	border-radius: 2px;
+}
+#tijd {
+	color: #000;
 }

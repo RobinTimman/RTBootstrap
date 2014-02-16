@@ -19,7 +19,7 @@ RTP-*	- Unsigned
 
 SubClassnames:
 RTB:
-	RTB-A-*
+	RTB-A-*		- Standard color
 	RTB-F-*		- Flat colored styles
 	RTB-i-*		- iPhone color Styles
 	RTB-C-*		- Columns
@@ -28,3 +28,7 @@ RTH:
 	RTH-*		- HTML element styles
 	RTH-*		- CSS elements
 	RTH-*		- Javascript elements
+
+
+responsive sizes:
+650px
