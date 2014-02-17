@@ -213,7 +213,13 @@ p {
 	height: 50px;
 	float: left;
 }
-.RTB-label {
+.RTB-btngroup {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: visible;
+}
+[class*="RTB-"][class*="-label"] {
 	display: inline;
 	margin: 0 3px;
 	padding: .2em .6em;
@@ -226,30 +232,110 @@ p {
 	vertical-align: baseline;
 	border-radius: .25em;
 }
-h1 .RTB-label,
-h2 .RTB-label,
-h3 .RTB-label {
+h1 [class*="RTB-"][class*="-label"],
+h2 [class*="RTB-"][class*="-label"],
+h3 [class*="RTB-"][class*="-label"] {
 	margin: 0 6px;
 }
 /* RTB columns */
-[class*="RTB-c-"] {
+[class*="RTB-c-"], [class*="RTB-"][class*="-c"] {
 	width: 100%;
 	min-height: 1px;
 	position: relative;
-	padding-right: 15px;
-	padding-left: 15px;
 	float: left;
 }
-.RTB-c-10 {	width: 10%; }
-.RTB-c-20 {	width: 20%; }
-.RTB-c-25 {	width: 25%; }
-.RTB-c-33 { width: 33.33333333333333%;}
-.RTB-c-50 {	width: 50%; }
-.RTB-c-66 { width: 66.66666666666667%;}
-.RTB-c-75 {	width: 75%; }
-.RTB-c-80 {	width: 80%; }
-.RTB-c-90 {	width: 90%; }
-.RTB-c-100 {width: 100%; }
+[class*="RTB-c-10"]  {	width: 10%; }
+[class*="RTB-c-20"]  {	width: 20%; }
+[class*="RTB-c-25"]  {	width: 25%; }
+[class*="RTB-c-33"]  {	width: 33.33333333333333%;}
+[class*="RTB-c-50"]  {	width: 50%; }
+[class*="RTB-c-66"]  {	width: 66.66666666666667%;}
+[class*="RTB-c-75"]  {	width: 75%; }
+[class*="RTB-c-80"]  {	width: 80%; }
+[class*="RTB-c-90"]  {	width: 90%; }
+[class*="RTB-c-100"] {	width: 100%;}
+
+/* new system */
+/* padding */
+[class*="RTB-"][class*="-p5"]	  { padding-left:  5px; padding-right:  5px; }
+[class*="RTB-"][class*="-p10"]	  { padding-left: 10px; padding-right: 10px; }
+[class*="RTB-"][class*="-p15"]	  { padding-left: 15px; padding-right: 15px; }
+[class*="RTB-"][class*="-p50"]	  { padding-left: 50px; padding-right: 50px; }
+[class*="RTB-"][class*="-p0"]	  { padding-left:  0px; padding-right:  0px; }
+/* margin */
+[class*="RTB-"][class*="-m5"]	  { margin-left:   5px; margin-right:   5px; }
+[class*="RTB-"][class*="-m10"]	  { margin-left:  10px; margin-right:  10px; }
+[class*="RTB-"][class*="-m15"]	  { margin-left:  15px; margin-right:  15px; }
+[class*="RTB-"][class*="-m0"]	  { margin-left:   0px; margin-right:   0px; }
+
+/* columns */
+[class*="RTB-"][class*="-c10"]    { width: 10%; }
+[class*="RTB-"][class*="-c20"]    { width: 20%; }
+[class*="RTB-"][class*="-c25"]    { width: 25%; }
+[class*="RTB-"][class*="-c33"]    { width: 33.33333333333333%; }
+[class*="RTB-"][class*="-c50"]    { width: 50%; }
+[class*="RTB-"][class*="-c66"]    { width: 66.66666666666667%; }
+[class*="RTB-"][class*="-c75"]    { width: 75%; }
+[class*="RTB-"][class*="-c80"]    { width: 80%; }
+[class*="RTB-"][class*="-c90"]    { width: 90%; }
+[class*="RTB-"][class*="-c100"]	  { width: 100%;}
+
+/* Colors */
+[class*="RTB-"][class*="-CBlue"]  { background-color: #6d96bd; }
+[class*="RTB-"][class*="-CDblu"]  { background-color: #343446; }
+[class*="RTB-"][class*="-CLblu"]  { background-color: #d6e7f6; }
+[class*="RTB-"][class*="-CGree"]  { background-color: #34c78a; }
+[class*="RTB-"][class*="-COran"]  { background-color: #ea9437; }
+[class*="RTB-"][class*="-CRed"]   { background-color: #df4c47; }
+	/* iphone colors */
+[class*="RTB-"][class*="-CiGra"]  { background-color: #444F59; }
+[class*="RTB-"][class*="-CiSpa"]  { background-color: #99989b; }
+[class*="RTB-"][class*="-CiGol"]  { background-color: #d4c5b3; }
+[class*="RTB-"][class*="-CiSil"]  { background-color: #d7d9d8; }
+	/* iphone 5C colors */
+[class*="RTB-"][class*="-CiBlu"]  { background-color: #46abe0; }
+[class*="RTB-"][class*="-CiGre"]  { background-color: #a1e877; }
+[class*="RTB-"][class*="-CiWhi"]  { background-color: #f5f4f7; }
+[class*="RTB-"][class*="-CiYel"]  { background-color: #faf189; }
+[class*="RTB-"][class*="-CiRed"]  { background-color: #fe767a; }
+	/* Flat colors */
+[class*="RTB-"][class*="-CfTur"]  { background-color: #1abc9c; }
+[class*="RTB-"][class*="-CfGre"]  { background-color: #16a085; }
+[class*="RTB-"][class*="-CfEme"]  { background-color: #2ecc71; }
+[class*="RTB-"][class*="-CfNep"]  { background-color: #27ae60; }
+[class*="RTB-"][class*="-CfPet"]  { background-color: #3498db; }
+[class*="RTB-"][class*="-CfBel"]  { background-color: #2980b9; }
+[class*="RTB-"][class*="-CfAme"]  { background-color: #9b59b6; }
+[class*="RTB-"][class*="-CfWis"]  { background-color: #8e44ad; }
+[class*="RTB-"][class*="-CfWet"]  { background-color: #34495e; }
+[class*="RTB-"][class*="-CfMid"]  { background-color: #2c3e50; }
+[class*="RTB-"][class*="-CfSun"]  { background-color: #f1c40f; }
+[class*="RTB-"][class*="-CfOra"]  { background-color: #f39c12; }
+[class*="RTB-"][class*="-CfCar"]  { background-color: #e67e22; }
+[class*="RTB-"][class*="-CfPum"]  { background-color: #d35400; }
+[class*="RTB-"][class*="-CfAli"]  { background-color: #e74c3c; }
+[class*="RTB-"][class*="-CfPom"]  { background-color: #c0392b; }
+[class*="RTB-"][class*="-CfClo"]  { background-color: #ecf0f1; }
+[class*="RTB-"][class*="-CfSil"]  { background-color: #bdc3c7; }
+[class*="RTB-"][class*="-CfCon"]  { background-color: #95a5a6; }
+[class*="RTB-"][class*="-CfAsb"]  { background-color: #7f8c8d; }
+
+
+/* responsive tables */
+@media screen and (max-width: 680px){
+	[class*="RTB-"][class*="-c10"],
+	[class*="RTB-"][class*="-c20"],
+	[class*="RTB-"][class*="-c25"],
+	[class*="RTB-"][class*="-c33"],
+	[class*="RTB-"][class*="-c50"],
+	[class*="RTB-"][class*="-c66"],
+	[class*="RTB-"][class*="-c75"] {
+		width: 100%;
+	}
+}
+/* end new system */
+
+
 @media screen and (max-width: 650px){
 	.RTB-c-33,
 	.RTB-c-50,
@@ -340,10 +426,11 @@ span[class*="RTB-i-"],
 .RTB-i-sil { background-color: #d7d9d8; }
 .RTB-i-gra { background-color: #444F59; }
 /* fix colors */
-.RTB-i-gre, .RTB-i-gre > a, .RTB-i-gre h1, .RTB-i-gre h2, .RTB-i-gre h3, .RTB-i-gre h4, .RTB-i-gre h5, .RTB-i-gre h6, span.RTB-i-gre,
-.RTB-i-whi, .RTB-i-whi > a, .RTB-i-whi h1, .RTB-i-whi h2, .RTB-i-whi h3, .RTB-i-whi h4, .RTB-i-whi h5, .RTB-i-whi h6, span.RTB-i-whi,
-.RTB-i-yel, .RTB-i-yel > a, .RTB-i-yel h1, .RTB-i-yel h2, .RTB-i-yel h3, .RTB-i-yel h4, .RTB-i-yel h5, .RTB-i-yel h6, span.RTB-i-yel,
-.RTB-i-sil, .RTB-i-sil > a, .RTB-i-sil h1, .RTB-i-sil h2, .RTB-i-sil h3, .RTB-i-sil h4, .RTB-i-sil h5, .RTB-i-sil h6, span.RTB-i-sil {
+.RTB-i-gre, .RTB-i-gre a, .RTB-i-gre h1, .RTB-i-gre h2, .RTB-i-gre h3, .RTB-i-gre h4, .RTB-i-gre h5, .RTB-i-gre h6, span.RTB-i-gre,
+.RTB-i-whi, .RTB-i-whi a, .RTB-i-whi h1, .RTB-i-whi h2, .RTB-i-whi h3, .RTB-i-whi h4, .RTB-i-whi h5, .RTB-i-whi h6, span.RTB-i-whi,
+.RTB-i-yel, .RTB-i-yel a, .RTB-i-yel h1, .RTB-i-yel h2, .RTB-i-yel h3, .RTB-i-yel h4, .RTB-i-yel h5, .RTB-i-yel h6, span.RTB-i-yel,
+.RTB-i-sil, .RTB-i-sil a, .RTB-i-sil h1, .RTB-i-sil h2, .RTB-i-sil h3, .RTB-i-sil h4, .RTB-i-sil h5, .RTB-i-sil h6, span.RTB-i-sil,
+.RTB-i-gol, .RTB-i-gol a, .RTB-i-gol h1, .RTB-i-gol h2, .RTB-i-gol h3, .RTB-i-gol h4, .RTB-i-gol h5, .RTB-i-gol h6, span.RTB-i-gol {
 	text-shadow: none;
 	color: #333;
 }

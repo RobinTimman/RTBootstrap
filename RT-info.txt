@@ -23,12 +23,81 @@ RTB:
 	RTB-F-*		- Flat colored styles
 	RTB-i-*		- iPhone color Styles
 	RTB-C-*		- Columns
+	RTB-[color]
+					RTB-i[iPhone color name]
+					RTB-if[Flat color name]
+					RTB-ib[Basic color name]
+	RTB-b[btn]:
+					RTB-bL		- Large btn
+	RTB-i[item]
+	RTB-c[column name]
+	RTB-C:
+		Ci[iPhone color name]
+	RTB-h[height]
+	RTB-m[margin size]
+		m 		- margin left and margin right
+		ms		- margin top  and margin bottom
+		mt		- margin top
+		mb		- margin bottom
+		ml		- margin left
+		mr		- margin right
+	RTB-n
+	RTB-o
+	RTB-p[padding size]
+		pt		- padding top
+		pb		- padding bottom
+		pl		- padding left
+		pr		- padding right
+	RTB-w[width]
+
 RTH:
 	RTH-*		- All element styles
 	RTH-*		- HTML element styles
 	RTH-*		- CSS elements
 	RTH-*		- Javascript elements
 
+icon-[Iconname]
+					RTB-iArL	- arrow left
+					RTB-iArR	- arrow right
+					RTB-iArU	- arrow up
+					RTB-iArD	- arrow down
 
 responsive sizes:
 650px
+
+
+
+Color Codes:
+
+rtc colors:
+	Flat colors:
+		turquoise: #1abc9c;
+		green sea: #16a085;
+		emerald: #2ecc71;
+		nephritis: #27ae60;
+		peter river: #3498db;
+		belize hole: #2980b9;
+		amethyst: #9b59b6;
+		wisteria: #8e44ad;
+		wet asphalt: #34495e;
+		midnight blue: #2c3e50;
+		sunflower: #f1c40f;
+		orange: #f39c12;
+		carrot: #e67e22;
+		pumpkin: #d35400;
+		alizarin: #e74c3c;
+		pomegranate: #c0392b;
+		cloude: #ecf0f1;
+		silver: #bdc3c7;
+		concrete: #95a5a6;
+		asbestos: #7f8c8d;
+	iPhone 5C:
+		blue: #46abe0;
+		green: #a1e877;
+		white: #f5f4f7;
+		yellow: #faf189;
+		red: #fe767a;
+	iPhone 5S:
+		spacegray: #99989b;
+		gold: #d4c5b3;
+		silver: #d7d9d8;
