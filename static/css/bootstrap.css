@@ -99,12 +99,16 @@ header .content {
 	display: inline-block;
 }
 .content {
+	width: 100%;
 	max-width: 1024px;
 	margin: 0 auto;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 .content-l, .content-b {
 	max-width: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 .content-b .content {
 	padding: 30px 15px 40px;
@@ -139,9 +143,11 @@ p {
 	padding: 15px;
 	margin: 0 -15px 15px;
 	background-color: rgba(255,255,255,0.5);
-	border-color: #e5e5e5 #eee #eee;
-	border-style: solid;
-	border-width: 1px 0;
+	/*border-color: #e5e5e5 #eee #eee;
+	border-style: solid;*/
+	border: 1px solid #e5e5e5;
+	border-left: none;
+	border-right: none;
 	overflow: auto;
 }
 @media screen and (min-width: 650px){
@@ -149,9 +155,10 @@ p {
 		margin-left: 0;
 		margin-right: 0;
 		background-color: rgba(255,255,255,0.5);
-		border-width: 1px;
+		/*border-width: 1px;*/
 		border-color: rgba(0,0,0,0.2);
 		border-radius: 4px;
+		border: 1px solid #e5e5e5;
 		box-shadow: none;
 	}
 }
@@ -208,12 +215,13 @@ p {
 	vertical-align: middle;
 	overflow: visible;
 }
-.btn {
+.btn, [class*="RTB-"][class*="-btn"] {
 	width: 50px;
 	height: 50px;
 	float: left;
 }
-.RTB-btngroup {
+[class*="RTB-"][class*="-btngroup"], .RTB-btngroup {
+	height: auto;
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
@@ -430,7 +438,8 @@ span[class*="RTB-i-"],
 .RTB-i-whi, .RTB-i-whi a, .RTB-i-whi h1, .RTB-i-whi h2, .RTB-i-whi h3, .RTB-i-whi h4, .RTB-i-whi h5, .RTB-i-whi h6, span.RTB-i-whi,
 .RTB-i-yel, .RTB-i-yel a, .RTB-i-yel h1, .RTB-i-yel h2, .RTB-i-yel h3, .RTB-i-yel h4, .RTB-i-yel h5, .RTB-i-yel h6, span.RTB-i-yel,
 .RTB-i-sil, .RTB-i-sil a, .RTB-i-sil h1, .RTB-i-sil h2, .RTB-i-sil h3, .RTB-i-sil h4, .RTB-i-sil h5, .RTB-i-sil h6, span.RTB-i-sil,
-.RTB-i-gol, .RTB-i-gol a, .RTB-i-gol h1, .RTB-i-gol h2, .RTB-i-gol h3, .RTB-i-gol h4, .RTB-i-gol h5, .RTB-i-gol h6, span.RTB-i-gol {
+.RTB-i-gol, .RTB-i-gol a, .RTB-i-gol h1, .RTB-i-gol h2, .RTB-i-gol h3, .RTB-i-gol h4, .RTB-i-gol h5, .RTB-i-gol h6, span.RTB-i-gol,
+[class*="RTB-"][class*="-CiWhi"] h1, [class*="RTB-"][class*="-CiWhi"] h2, [class*="RTB-"][class*="-CiWhi"] h3, [class*="RTB-"][class*="-CiWhi"] h4, [class*="RTB-"][class*="-CiWhi"] h5, [class*="RTB-"][class*="-CiWhi"] h6, span[class*="RTB-"][class*="-CiWhi"] {
 	text-shadow: none;
 	color: #333;
 }
