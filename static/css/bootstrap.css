@@ -141,25 +141,20 @@ p {
 .rt-item {
 	position: relative;
 	padding: 15px;
-	margin: 0 -15px 15px;
+	margin: 0;
 	background-color: rgba(255,255,255,0.5);
 	/*border-color: #e5e5e5 #eee #eee;
 	border-style: solid;*/
 	border: 1px solid #e5e5e5;
-	border-left: none;
-	border-right: none;
 	overflow: auto;
+	border-radius: 4px;
 }
-@media screen and (min-width: 650px){
+@media screen and (max-width: 650px){
 	.rt-item {
-		margin-left: 0;
-		margin-right: 0;
-		background-color: rgba(255,255,255,0.5);
-		/*border-width: 1px;*/
-		border-color: rgba(0,0,0,0.2);
-		border-radius: 4px;
-		border: 1px solid #e5e5e5;
-		box-shadow: none;
+		margin: 0 -15px 15px;
+		border-left: none;
+		border-right: none;
+		border-radius: 0px;
 	}
 }
 .rt-item-footer {
@@ -246,7 +241,7 @@ h3 [class*="RTB-"][class*="-label"] {
 	margin: 0 6px;
 }
 /* RTB columns */
-[class*="RTB-c-"], [class*="RTB-"][class*="-c"] {
+[class*="RTB-"][class*="-c"] {
 	width: 100%;
 	min-height: 1px;
 	position: relative;
