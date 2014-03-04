@@ -137,6 +137,12 @@ p {
 	/*color: #fff;*/
 }
 
+@media screen and (max-width: 650px){
+	.head-title h1 {
+		/*padding-top: 10px;*/
+		padding: 10px 10px 0;
+	}
+}
 
 .rt-item {
 	position: relative;
@@ -151,7 +157,7 @@ p {
 }
 @media screen and (max-width: 650px){
 	.rt-item {
-		margin: 0 -15px 15px;
+		margin: 0 0px 15px;
 		border-left: none;
 		border-right: none;
 		border-radius: 0px;
@@ -265,6 +271,12 @@ h3 [class*="RTB-"][class*="-label"] {
 [class*="RTB-"][class*="-p15"]	  { padding-left: 15px; padding-right: 15px; }
 [class*="RTB-"][class*="-p50"]	  { padding-left: 50px; padding-right: 50px; }
 [class*="RTB-"][class*="-p0"]	  { padding-left:  0px; padding-right:  0px; }
+@media screen and (max-width: 650px){
+[class*="RTB-"][class*="-p10"],
+[class*="RTB-"][class*="-p15"],
+[class*="RTB-"][class*="-p20"]	  { padding-left:  0px; padding-right:  0px; }
+}
+
 /* margin */
 [class*="RTB-"][class*="-m5"]	  { margin-left:   5px; margin-right:   5px; }
 [class*="RTB-"][class*="-m10"]	  { margin-left:  10px; margin-right:  10px; }
@@ -323,6 +335,47 @@ h3 [class*="RTB-"][class*="-label"] {
 [class*="RTB-"][class*="-CfCon"]  { background-color: #95a5a6; }
 [class*="RTB-"][class*="-CfAsb"]  { background-color: #7f8c8d; }
 
+/* Text-Colors */
+[class*="RTB-"][class*="-tCBlue"]  { color: #6d96bd; }
+[class*="RTB-"][class*="-tCDblu"]  { color: #343446; }
+[class*="RTB-"][class*="-tCLblu"]  { color: #d6e7f6; }
+[class*="RTB-"][class*="-tCGree"]  { color: #34c78a; }
+[class*="RTB-"][class*="-tCOran"]  { color: #ea9437; }
+[class*="RTB-"][class*="-tCRed"]   { color: #df4c47; }
+	/* iphone colors */
+[class*="RTB-"][class*="-tCiGra"]  { color: #444F59; }
+[class*="RTB-"][class*="-tCiSpa"]  { color: #99989b; }
+[class*="RTB-"][class*="-tCiGol"]  { color: #d4c5b3; }
+[class*="RTB-"][class*="-tCiSil"]  { color: #d7d9d8; }
+	/* iphone 5C colors */
+[class*="RTB-"][class*="-tCiBlu"]  { color: #46abe0; }
+[class*="RTB-"][class*="-tCiGre"]  { color: #a1e877; }
+[class*="RTB-"][class*="-tCiWhi"]  { color: #f5f4f7; }
+[class*="RTB-"][class*="-tCiYel"]  { color: #faf189; }
+[class*="RTB-"][class*="-tCiRed"]  { color: #fe767a; }
+	/* Flat colors */
+[class*="RTB-"][class*="-tCfTur"]  { color: #1abc9c; }
+[class*="RTB-"][class*="-tCfGre"]  { color: #16a085; }
+[class*="RTB-"][class*="-tCfEme"]  { color: #2ecc71; }
+[class*="RTB-"][class*="-tCfNep"]  { color: #27ae60; }
+[class*="RTB-"][class*="-tCfPet"]  { color: #3498db; }
+[class*="RTB-"][class*="-tCfBel"]  { color: #2980b9; }
+[class*="RTB-"][class*="-tCfAme"]  { color: #9b59b6; }
+[class*="RTB-"][class*="-tCfWis"]  { color: #8e44ad; }
+[class*="RTB-"][class*="-tCfWet"]  { color: #34495e; }
+[class*="RTB-"][class*="-tCfMid"]  { color: #2c3e50; }
+[class*="RTB-"][class*="-tCfSun"]  { color: #f1c40f; }
+[class*="RTB-"][class*="-tCfOra"]  { color: #f39c12; }
+[class*="RTB-"][class*="-tCfCar"]  { color: #e67e22; }
+[class*="RTB-"][class*="-tCfPum"]  { color: #d35400; }
+[class*="RTB-"][class*="-tCfAli"]  { color: #e74c3c; }
+[class*="RTB-"][class*="-tCfPom"]  { color: #c0392b; }
+[class*="RTB-"][class*="-tCfClo"]  { color: #ecf0f1; }
+[class*="RTB-"][class*="-tCfSil"]  { color: #bdc3c7; }
+[class*="RTB-"][class*="-tCfCon"]  { color: #95a5a6; }
+[class*="RTB-"][class*="-tCfAsb"]  { color: #7f8c8d; }
+
+/* end text colors */
 
 /* responsive tables */
 @media screen and (max-width: 680px){
@@ -469,6 +522,14 @@ h3 span[class*="RTB-"], .h3 span[class*="RTB-"],
 h4 span[class*="RTB-"], .h4 span[class*="RTB-"],
 h5 span[class*="RTB-"], .h5 span[class*="RTB-"],
 h6 span[class*="RTB-"], .h6 span[class*="RTB-"] {}
+
+@media screen and (max-width: 650px){
+	h3[class*="RTB-"][class*="-titles"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
 /*
 h1 span, .h1 span {
 	font-size: 34px;
